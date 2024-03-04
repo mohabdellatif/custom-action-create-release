@@ -1,0 +1,7 @@
+# action.yml
+name: 'JIRA RELEASE'
+description: 'Start releases from JIRA'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+ 
