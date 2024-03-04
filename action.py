@@ -13,7 +13,7 @@ org_url = server_url+ "repos/" + organization + "/"
 payload = json.loads(os.getenv('PAYLOAD', '{}'))
 releasename = payload.get('ReleaseName')
 token = os.getenv("GH_RELEASE")
-pipeline_file_name = os.getenv("GOLDENCICD_FILENAME")
+pipeline_file_name = os.getenv("CICD_FILENAME")
 failed = False
 
 if payload and 'Repositories' in payload and payload['Repositories']: #required for local testing
